@@ -35,48 +35,59 @@
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar">
-      <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-        <a href="index.html" class="navbar-brand px-lg-4 m-0">
-          <!-- <h1 class="m-0 display-5 text-uppercase text-white">Mocado Caffe</h1> -->
-          <img src="/img/mocado.png" class="img-logo" alt="">
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav ml-auto p-4">
-            <a href="index.html" class="nav-item nav-link">Pagina principala</a>
-            <a href="about.html" class="nav-item nav-link active">Despre noi</a>
-            <a href="service.html" class="nav-item nav-link">Catalog</a>
-            <a href="menu.html" class="nav-item nav-link">Meniu</a>
-            <!-- <div class="nav-item dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    >Pages</a
-                  >
-                  <div class="dropdown-menu text-capitalize">
-                    <a href="reservation.html" class="dropdown-item">Reservation</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                  </div>
-                </div> -->
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
+   <!-- Navbar Start -->
+   <div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+      <a href="index.html" class="navbar-brand px-lg-4 m-0">
+        <!-- <h1 class="m-0 display-5 text-uppercase text-white">Mocado Caffe</h1> -->
+        <div class="img-logo">
+          <img src="img/mocado-6.png" alt="" />
         </div>
-      </nav>
-    </div>
-    <!-- Navbar End -->
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ml-auto p-4">
+          <a href="index_ro.html" class="nav-item nav-link "
+            >Pagina principala</a
+          >
+          <a href="about_ro.html" class="nav-item nav-link"
+            >Despre noi</a>
+          >
+          <a href="service_ro.html" class="nav-item nav-link">Catalog</a>
+          <a href="menu_ro.html" class="nav-item nav-link active">Meniu</a>
+          <a href="contact_ro.html" class="nav-item nav-link">Contact</a>
+        </div>
+
+        <div class="language-switcher">
+          <a href="#" onclick="switchLanguage('en')">English</a> |
+          <a href="#" onclick="switchLanguage('ro')">Română</a>
+        </div>
+        <!-- <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu text-capitalize">
+                <a href="reservation.html" class="dropdown-item">Reservation</a>
+                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+              </div>
+            </div> -->
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
 
     <!-- Page Header Start -->
     <div
@@ -98,128 +109,161 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- Menu Start -->
-    <div class="container-fluid pt-5">
-      <div class="container">
-        <div class="section-title">
-          <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            Meniu
-          </h4>
-          <h1 class="display-4">Preturi</h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="mb-5">Cafea</h1>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-1.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99 </h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Cafea neagra</h4>
-                <p class="m-0">
-                  Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-                  et lorem dolor
-                </p>
-              </div>
+   <!-- Menu Start -->
+   <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
+          Meniu
+        <h1 class="display-4">Catalog</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-1.jpg"
+                alt=""
+              />
             </div>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-2.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99 </h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Ciocolata calda</h4>
-                <p class="m-0">
-                  Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-                  et lorem dolor
-                </p>
-              </div>
-            </div>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-3.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99 </h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Cafea cu lapte</h4>
-                <p class="m-0">
-                  Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-                  et lorem dolor
-                </p>
-              </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cafea</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h1 class="mb-5">Cafea rece</h1>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-1.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99 </h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Capuccino</h4>
-                <p class="m-0">
-                  Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-                  et lorem dolor
-                </p>
-              </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-2.jpg"
+                alt=""
+              />
             </div>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-2.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99 </h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Espreso</h4>
-                <p class="m-0">
-                  Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-                  et lorem dolor
-                </p>
-              </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cappucino</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
             </div>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-3.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99 </h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Americana</h4>
-                <p class="m-0">
-                  Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-                  et lorem dolor
-                </p>
-              </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Ciocolată caldă</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cocktailuri non-alcoolice</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Capuccino</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Fresh-uri</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Deserturi</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
+            </div>
+          </div>
+        
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/menu-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Sucuri răcoritoare</h4>
+              <p class="m-0">
+                Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
+                et lorem dolor
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <div class="section-title">
+        <div>
+          <h1>Apasă aici ca să vezi tot catalogul complet</h1>
+          <a href="/menu_ro.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2"
+          >Catalog</a
+        >
+      </div>
+      </div>
+     
     </div>
-    <!-- Menu End -->
+  </div>
+  <!-- Menu End -->
 
     <!-- Footer Start -->
     <div
