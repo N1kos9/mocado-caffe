@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Mocado Caffe</title>
+    <title>Mocado Caffee</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <link rel="stylesheet" href="engine.css" />
+    
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -37,8 +37,9 @@
   <body>
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
-      <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+      <nav class="navbar navbar-responsive navbar-expand-lg bg-none navbar-dark py-3">
         <a href="index.html" class="navbar-brand px-lg-4 m-0">
+          <!-- <h1 class="m-0 display-5 text-uppercase text-white">Mocado Caffe</h1> -->
           <div class="img-logo">
             <img src="img/mocado-7.png" alt="" />
           </div>
@@ -56,16 +57,38 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav ml-auto p-4">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
-            <a href="service.html" class="nav-item nav-link">Catalog</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="index.html" class="nav-item nav-link active"
+              >Pagina principala</a
+            >
+            <a href="about_ro.html" class="nav-item nav-link"
+              >Despre noi</a>
+            
+            <a href="service_ro.html" class="nav-item nav-link">Catalog</a>
+            <a href="menu_ro.html" class="nav-item nav-link">Meniu</a>
+            <a href="cafea_moleculara.html" class="nav-item nav-link">Cafea subacvatica</a>
+
+            <a href="colt_lectura.html" class="nav-item nav-link">Colt de lectura</a>
+
+            <!-- <a href="menu_ro.html" class="nav-item nav-link">Meniu</a> -->
+            <a href="contact_ro.html" class="nav-item nav-link">Contact</a>
           </div>
+
           <div class="language-switcher">
             <a href="#" onclick="switchLanguage('en')">English</a> |
             <a href="#" onclick="switchLanguage('ro')">Română</a>
           </div>
+          <!-- <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  >Pages</a
+                >
+                <div class="dropdown-menu text-capitalize">
+                  <a href="reservation.html" class="dropdown-item">Reservation</a>
+                  <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                </div>
+              </div> -->
         </div>
       </nav>
     </div>
@@ -85,13 +108,16 @@
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
               <h2 class="text-primary font-weight-medium m-0">
-                Need a break? <br />
-                Drink a coffee from
+                Need a break? <br>
+                Drink a coffee!
               </h2>
               <h1 class="display-1 text-uppercase text-white m-0">
                 Mocado <br />
-                Coffee
+                Caffee
               </h1>
+              <!-- <h2 class="text-white m-10 display-6 text-primary">
+                Servim cafea din anul 2016
+              </h2> -->
             </div>
           </div>
           <div class="carousel-item">
@@ -99,13 +125,13 @@
             <div
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
-              <h2 class="text-primary font-weight-medium m-0">
-                Need a break? <br />
-                Drink a coffee!
-              </h2>
+            <h2 class="text-primary font-weight-medium m-0">
+              Need a break? <br>
+              Drink a coffee!
+            </h2>
               <h1 class="display-1 text-uppercase text-white m-0">
                 Mocado <br />
-                Coffee
+                Caffee
               </h1>
             </div>
           </div>
@@ -128,35 +154,66 @@
     </div>
     <!-- Carousel End -->
 
+
+    <section id="about" class="spot-section align-items-center justify-content-center text-center">
+      <div class="container container-vid align-items-center justify-content-center text-center">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-lg-12 ">
+            <div class="section-title">
+    
+              <h5 class="text-primary text-uppercase" style="letter-spacing: 5px">
+                CAFENEAUA MOCADO CAFFE
+              </h5>
+              <h4 class="display-4">Vă invită să 
+                vizualizati <br> <span class="text-primary"> Spotul intreprinderii</span>
+              </h4>
+    
+            </div>
+         
+          </div>
+          <div class="col-lg-12 align-items-center justify-content-center text-center">
+      
+              
+              </h4>
+              <div class="w-90 align-items-center justify-content-center text-center">
+                <div class="container-fluid my-5 align-items-center justify-content-center text-center">
+                  <div class="container container-vid align-items-center justify-content-center text-center">
+                <video controls src="img/spot.mp4"></video>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- About Start -->
     <div class="container-fluid py-5">
       <div class="container">
         <div class="section-title">
           <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            About Us
+            Despre noi
           </h4>
-          <h1 class="display-4">We serve coffee since 2014</h1>
+          <h1 class="display-4">Servim cafea din anul 2014</h1>
         </div>
         <div class="row">
           <div class="col-lg-4 py-0 py-lg-5">
-            <h1 class="mb-3">Our Story</h1>
+            <h1 class="mb-3">Povestea noastră</h1>
             <!-- <h5 class="mb-3">
-          Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet
-          sed vero dolor sea
-        </h5> -->
+              Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet
+              sed vero dolor sea
+            </h5> -->
             <p>
-              We opened this coffee shop to delight your senses with friends or
-              carefully selected books to captivate your attention.
-              <br />
-              <br />
-              Our young team offers you delicious products, from freshly brewed
-              coffee to hot chocolate and refreshing cocktails.
-              <br />
-              <br />
-              We aim to satisfy all tastes and needs at the highest standards.
+              Am deschis această cafenea pentru a vă bucura simțurile alături de
+              prieteni sau cărți alese special pentru a vă captiva atenția. <br><br>
+              Echipa noastră tânără vă oferă produse delicioase, de la cafea
+              proaspăt preparată la ciocolată caldă și cocktail-uri revigorante. <br><br>
+              Ne propunem să satisfacem toate gusturile și nevoile la cele mai
+              înalte standarde.
             </p>
             <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2"
-              >Read More</a
+              >Mai multe</a
             >
           </div>
           <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px">
@@ -169,28 +226,26 @@
             </div>
           </div>
           <div class="col-lg-4 py-0 py-lg-5">
-            <h1 class="mb-3">Our Vision</h1>
+            <h1 class="mb-3">Viziunea noastră</h1>
             <p>
-              We aim to become a well-known company in the market of exercise
-              firms.
-              <br />
-              <br />
-              To gain the trust of customers by offering quality products and to
-              retain them through specially created and adapted strategies to
-              their needs, requirements, and desires.
+              Ne dorim să devenim o firmă cunoscută pe piața firmelor de
+              exercițiu, să obținem încrederea clienților prin oferirea unor
+              produse de calitate șî să îi fidelizăm prin strategii special
+              create si adaptate nevoilor, cerințelor și dorințelor acestora.
             </p>
             <h5 class="mb-3">
-              <i class="fa fa-check text-primary mr-3"></i>Diverse menu
+              <i class="fa fa-check text-primary mr-3"></i>Portofoliu divers
+              
             </h5>
             <h5 class="mb-3">
-              <i class="fa fa-check text-primary mr-3"></i>Personalized services
+              <i class="fa fa-check text-primary mr-3"></i>Servicii
+              personalizate
             </h5>
             <h5 class="mb-3">
-              <i class="fa fa-check text-primary mr-3"></i>Strategies adapted to
-              market
+              <i class="fa fa-check text-primary mr-3"></i>Strategii adaptate
             </h5>
             <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2"
-              >Read More</a
+              >Mai multe</a
             >
           </div>
         </div>
@@ -203,7 +258,7 @@
       <div class="container">
         <div class="section-title">
           <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            Our Services
+            Serviciile noastre
           </h4>
           <h1 class="display-4">Fresh & Organic</h1>
         </div>
@@ -219,11 +274,11 @@
               </div>
               <div class="col-sm-7">
                 <h4>
-                  <i class="fa fa-truck service-icon"></i>Quality Selection
+                  <i class="fa fa-truck service-icon"></i>Selecție de Calitate
                 </h4>
                 <p class="m-0">
-                  Our fresh and organic products are sourced from trusted
-                  suppliers, guaranteeing quality and freshness.
+                  Produsele noastre proaspete și organice sunt obținute din
+                  surse de încredere, garantând calitate și prospețime.
                 </p>
               </div>
             </div>
@@ -239,11 +294,12 @@
               </div>
               <div class="col-sm-7">
                 <h4>
-                  <i class="fa fa-coffee service-icon"></i>Delicious Variety
+                  <i class="fa fa-coffee service-icon"></i>Variație Delicioasă
                 </h4>
                 <p class="m-0">
-                  We offer a wide range of fresh and organic products, carefully
-                  selected to satisfy the refined tastes of our customers.
+                  Oferim o gamă largă de produse proaspete și organice, alese cu
+                  grijă pentru a satisface gusturile rafinate ale clienților
+                  noștri.
                 </p>
               </div>
             </div>
@@ -258,11 +314,13 @@
                 />
               </div>
               <div class="col-sm-7">
-                <h4><i class="fa fa-award service-icon"></i>High Standards</h4>
+                <h4>
+                  <i class="fa fa-award service-icon"></i>Standarde Ridicate
+                </h4>
                 <p class="m-0">
-                  We maintain high quality standards for each product, ensuring
-                  that our customers receive only the best options on the
-                  market.
+                  Angajăm standarde înalte de calitate pentru fiecare produs,
+                  asigurându-ne că clienții noștri primesc doar cele mai bune
+                  opțiuni de pe piață.
                 </p>
               </div>
             </div>
@@ -278,12 +336,14 @@
               </div>
               <div class="col-sm-7">
                 <h4>
-                  <i class="fa fa-table service-icon"></i>Personalized Attention
+                  <i class="fa fa-table service-icon"></i>Atenție Personalizată
                 </h4>
                 <p class="m-0">
-                  We take pride in our selection of fresh and organic products,
-                  always attentive to the needs and preferences of our
-                  customers.
+                <p class="m-0">
+                <p class="m-0">
+                  Ne mândrim cu selecția noastră de produse proaspete și
+                  organice, fiind mereu atenți la nevoile și preferințele
+                  clienților noștri.
                 </p>
               </div>
             </div>
@@ -298,17 +358,14 @@
       class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom"
     >
       <div class="container py-5">
-        <h1 class="display-3 text-primary mt-3">50% OFF</h1>
-        <h1 class="text-white mb-3">de 1 may</h1>
-        <h4 class="text-white font-weight-normal mb-4 pb-3">
-          Reserve a table now!
-        </h4>
-        <form class="form-inline justify-content-center mb-4">
-          <div class="input-group">
+        <h1 class="display-3 text-primary mt-3">Oferta de 1 Mai</h1>
+        <h4 class="text-white mb-3">De 1 Mai, avem cafea delicioasă și dulciuri, inclusiv oferte speciale pentru întâlnirile cu prietenii: cumperi două cafele și primești a treia gratuită. Profită de aceste oferte pentru o pauză plăcută!</h4>
+        <form class="form-inline justify-content-center mb-4 mt-3">
+          <div class="input-group mt-4">
             <input
               type="text"
               class="form-control p-4"
-              placeholder="your email"
+              placeholder="email-ul tau"
               style="height: 60px"
             />
             <div class="input-group-append">
@@ -316,7 +373,7 @@
                 class="btn btn-primary font-weight-bold px-4"
                 type="submit"
               >
-                book
+                rezervă
               </button>
             </div>
           </div>
@@ -330,13 +387,11 @@
       <div class="container">
         <div class="section-title">
           <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            Menu
-          </h4>
-          <h1 class="display-4">Prices</h1>
+            Meniu
+          <h1 class="display-4">Catalog</h1>
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <h1 class="mb-5">Coffee</h1>
             <div class="row align-items-center mb-5">
               <div class="col-4 col-sm-3">
                 <img
@@ -344,30 +399,13 @@
                   src="img/menu-1.jpg"
                   alt=""
                 />
-                <h5 class="menu-price">6.99</h5>
               </div>
               <div class="col-8 col-sm-9">
-                <h4>Black Coffee</h4>
+                <h4>Cafea</h4>
                 <p class="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-2.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99</h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Hot Chocolate</h4>
-                <p class="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  O aromă învăluitoare ce îți îmblânzește diminețile.
+
+
                 </p>
               </div>
             </div>
@@ -378,36 +416,35 @@
                   src="img/menu-3.jpg"
                   alt=""
                 />
-                <h5 class="menu-price">6.99</h5>
               </div>
               <div class="col-8 col-sm-9">
-                <h4>Coffee with Milk</h4>
+                <h4>Cappucino</h4>
                 <p class="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Un deliciu cremos pentru momentele de răsfăț.
+
+
+                </p>
+              </div>
+            </div>
+            <div class="row align-items-center mb-5">
+              <div class="col-4 col-sm-3">
+                <img
+                  class="w-100 rounded-circle mb-3 mb-sm-0"
+                  src="img/menu-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-8 col-sm-9">
+                <h4>Cocktailuri non-alcoolice</h4>
+                <p class="m-0">
+                  Combinății inedite pentru o experiență răcoritoare.
+
+
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <h1 class="mb-5">Cold Coffee</h1>
-            <div class="row align-items-center mb-5">
-              <div class="col-4 col-sm-3">
-                <img
-                  class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-1.jpg"
-                  alt=""
-                />
-                <h5 class="menu-price">6.99</h5>
-              </div>
-              <div class="col-8 col-sm-9">
-                <h4>Cappuccino</h4>
-                <p class="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-            </div>
             <div class="row align-items-center mb-5">
               <div class="col-4 col-sm-3">
                 <img
@@ -415,13 +452,13 @@
                   src="img/menu-2.jpg"
                   alt=""
                 />
-                <h5 class="menu-price">6.99</h5>
               </div>
               <div class="col-8 col-sm-9">
-                <h4>Espresso</h4>
+                <h4>Ciocolata Calda</h4>
                 <p class="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Bucurie într-o ceașcă, perfectă pentru zilele friguroase.
+
+
                 </p>
               </div>
             </div>
@@ -429,30 +466,47 @@
               <div class="col-4 col-sm-3">
                 <img
                   class="w-100 rounded-circle mb-3 mb-sm-0"
-                  src="img/menu-3.jpg"
+                  src="img/menu-6.png"
                   alt=""
                 />
-                <h5 class="menu-price">6.99</h5>
               </div>
               <div class="col-8 col-sm-9">
-                <h4>Americano</h4>
+                <h4>Fresh-uri</h4>
                 <p class="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Revigorarea naturală a zilelor tale.
+
+
+                </p>
+              </div>
+            </div>
+            <div class="row align-items-center mb-5">
+              <div class="col-4 col-sm-3">
+                <img
+                  class="w-100 rounded-circle mb-3 mb-sm-0"
+                  src="img/menu-5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-8 col-sm-9">
+                <h4>Sucuri răcoritoare</h4>
+                <p class="m-0">
+                  Răsfăț pentru setea ta, în fiecare pahar.
+
+
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="section-title">
-          <div>
-            <h1>Click here to see the entire menu</h1>
-            <a
-              href="/menu.html"
-              class="btn btn-secondary font-weight-bold py-2 px-4 mt-2"
-              >Menu</a
-            >
-          </div>
+      </div>
+      <div class="section-titlee">
+        <div>
+          <h1>Vezi catalogul</h1>
+          <a
+            href="/menu.html"
+            class="btn btn-secondary font-weight-bold py-2 px-4 mt-2"
+            >Catalog</a
+          >
         </div>
       </div>
     </div>
@@ -466,29 +520,13 @@
             <div class="col-lg-6 my-5 my-lg-0">
               <div class="p-5">
                 <div class="mb-4">
-                  <h1 class="display-3 text-primary">30% (Promotion)</h1>
-                  <h1 class="text-white">Rezerve now</h1>
+                  <h1 class="display-3 text-primary">Descopera si alte oferte luni Mai</h1>
+                  <h2 class="text-white mt-2">Te invitam sa te relaxezi cu o oferta de neratat in fiecare saptamana!</h2>
                 </div>
                 <p class="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Pentru mai multe detalii rezervati o masa online
                 </p>
-                <ul class="list-inline text-white m-0">
-                  <li class="py-2">
-                    <i class="fa fa-check text-primary mr-3"></i>Lorem ipsum
-                    dolor sit amet
-                  </li>
-                  <li class="py-2">
-                    <i class="fa fa-check text-primary mr-3"></i>Lorem ipsum
-                    dolor sit amet
-                  </li>
-                  <li class="py-2">
-                    <i class="fa fa-check text-primary mr-3"></i>Lorem ipsum
-                    dolor sit amet
-                  </li>
-                </ul>
+               
               </div>
             </div>
             <div class="col-lg-6">
@@ -496,13 +534,13 @@
                 class="text-center p-5"
                 style="background: rgba(51, 33, 29, 0.8)"
               >
-                <h1 class="text-white mb-4 mt-5">reserve a table</h1>
+                <h1 class="text-white mb-4 mt-5">Rezervati o masa online</h1>
                 <form class="mb-5">
                   <div class="form-group">
                     <input
                       type="text"
                       class="form-control bg-transparent border-primary p-4"
-                      placeholder="Name"
+                      placeholder="Nume"
                       required="required"
                     />
                   </div>
@@ -519,7 +557,7 @@
                       <input
                         type="text"
                         class="form-control bg-transparent border-primary p-4 datetimepicker-input"
-                        placeholder="Date"
+                        placeholder="Data"
                         data-target="#date"
                         data-toggle="datetimepicker"
                       />
@@ -530,7 +568,7 @@
                       <input
                         type="text"
                         class="form-control bg-transparent border-primary p-4 datetimepicker-input"
-                        placeholder="Time"
+                        placeholder="Timp"
                         data-target="#time"
                         data-toggle="datetimepicker"
                       />
@@ -541,187 +579,121 @@
                       class="custom-select bg-transparent border-primary px-4"
                       style="height: 49px"
                     >
-                      <option selected>Number of people for the table</option>
+                      <option selected>Pentru cate persoane sa fie masa</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
-                      <option value="4">4</option>
+                      <option value="3">4</option>
                     </select>
                   </div>
 
-                  <div>
-                    <button
-                      class="btn btn-primary btn-block font-weight-bold py-3"
-                      type="submit"
-                    >
-                      reserve now
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Reservation End -->
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="section-title">
-          <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            Testimonial
-          </h4>
-          <h1 class="display-4">Our Clients</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel">
-          <div class="testimonial-item">
-            <div class="d-flex align-items-center mb-3">
-              <div class="ml-3">
-                <h4>Client Name</h4>
-                <i>Profession</i>
-              </div>
-            </div>
-            <p class="m-0">
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum sanct clita
-            </p>
-          </div>
-          <div class="testimonial-item">
-            <div class="d-flex align-items-center mb-3">
-              <div class="ml-3">
-                <h4>Client Name</h4>
-                <i>Profession</i>
-              </div>
-            </div>
-            <p class="m-0">
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum sanct clita
-            </p>
-          </div>
-          <div class="testimonial-item">
-            <div class="d-flex align-items-center mb-3">
-              <div class="ml-3">
-                <h4>Client Name</h4>
-                <i>Profession</i>
-              </div>
-            </div>
-            <p class="m-0">
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum sanct clita
-            </p>
-          </div>
-          <div class="testimonial-item">
-            <div class="d-flex align-items-center mb-3">
-              <div class="ml-3">
-                <h4>Client Name</h4>
-                <i>Profession</i>
-              </div>
-            </div>
-            <p class="m-0">
-              Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr
-              eirmod clita lorem. Dolor tempor ipsum sanct clita
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial End -->
-
-    <!-- Footer Start -->
-    <div
-      class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top"
-    >
-      <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Contact Us
-          </h4>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>Bacau</p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-          <p class="m-0">
-            <i class="fa fa-envelope mr-2"></i>someone@gmail.com
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Follow us
-          </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-          <div class="d-flex justify-content-start">
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://youtube.com/freewebsitecode/"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Opening Hours
-          </h4>
-          <div>
-            <h6 class="text-white text-uppercase">Monday - Friday</h6>
-            <p>8.00 AM - 8.00 PM</p>
-            <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
-            <p>2.00 PM - 8.00 PM</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Newsletter
-          </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-          <div class="w-100">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control border-light"
-                style="padding: 25px"
-                placeholder="Your Email"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-primary font-weight-bold px-3">
-                  Subscribe
+              <div>
+                <button
+                  class="btn btn-primary btn-block font-weight-bold py-3"
+                  type="submit"
+                >
+                  Rezerva
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+</div>
+<!-- Reservation End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="text-primary text-uppercase" style="letter-spacing: 5px">
+        Dea lungul timpului activitatea <br> Mocado Caffe a fost si premiata
+      </h3>
+      <!-- <h1 class="display-4">Mocado Caffe</h1> -->
+      
+    </div>
+    <div class="owl-carousel testimonial-carousel">
+      <div class="testimonial-item">
+       <img src="img/M1.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M2.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M3.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M4.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M5.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M6.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M7.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M8.jpg" alt="">
+      </div>
+      <div class="testimonial-item">
+        <img src="img/M9.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonial End -->
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+  <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Contactează-ne</h4>
+      <p><i class="fa fa-map-marker-alt mr-2"></i>Bacău, str. 9 Mai</p>
+      <p><i class="fa fa-phone-alt mr-2"></i>+0234 510 435</p>
+      <p class="m-0"><i class="fa fa-envelope mr-2"></i>femocadocaffe@yahoo.com</p>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Urmărește-ne</h4>
+      <p>Fii la curent cu noutățile și ofertele noastre!</p>
+      <div class="d-flex justify-content-start">
+        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://freewebsitecode.com"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://freewebsitecode.com"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://freewebsitecode.com"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Deschis între orele</h4>
+      <div>
+        <h6 class="text-white text-uppercase">Luni - Vineri</h6>
+        <p>8.00 AM - 8.00 PM</p>
+        <h6 class="text-white text-uppercase">Sâmbătă - Duminică</h6>
+        <p>2.00 PM - 8.00 PM</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Noutăți</h4>
+      <p>Abonează-te pentru a primi cele mai proaspete informații și oferte.</p>
+      <div class="w-100">
+        <div class="input-group">
+          <input type="text" class="form-control border-light" style="padding: 25px" placeholder="emailul tău" />
+          <div class="input-group-append">
+            <button class="btn btn-primary font-weight-bold px-3">Înregistrează-te</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
@@ -732,8 +704,8 @@
       function switchLanguage(lang) {
         // Define a mapping of language codes to their respective URLs
         const langUrls = {
-          en: "index.html", // English version
-          ro: "index_ro.html", // Romanian version
+          en: "index_en.html", // English version
+          ro: "index.html", // Romanian version
         };
 
         // Get the current URL
