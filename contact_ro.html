@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="global.css" />
 
     <!-- Font Awesome -->
     <link
@@ -36,10 +37,14 @@
   <body>
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
-      <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+      <nav
+        class="navbar navbar-responsive navbar-expand-lg bg-none navbar-dark py-3"
+      >
         <a href="index.html" class="navbar-brand px-lg-4 m-0">
           <!-- <h1 class="m-0 display-5 text-uppercase text-white">Mocado Caffe</h1> -->
-          <img src="/img/mocado.png" class="img-logo" alt="" />
+          <div class="img-logo">
+            <img src="img/mocado-7.png" alt="" />
+          </div>
         </a>
         <button
           type="button"
@@ -55,22 +60,26 @@
         >
           <div class="navbar-nav ml-auto p-4">
             <a href="index.html" class="nav-item nav-link">Pagina principala</a>
-            <a href="about.html" class="nav-item nav-link active">Despre noi</a>
-            <a href="service.html" class="nav-item nav-link">Catalog</a>
-            <a href="menu.html" class="nav-item nav-link">Meniu</a>
-            <!-- <div class="nav-item dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    >Pages</a
-                  >
-                  <div class="dropdown-menu text-capitalize">
-                    <a href="reservation.html" class="dropdown-item">Reservation</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                  </div>
-                </div> -->
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="about_ro.html" class="nav-item nav-link">Despre noi</a>
+
+            <a href="service_ro.html" class="nav-item nav-link">Catalog</a>
+            <a href="cafea_moleculara.html" class="nav-item nav-link"
+              >Cafea subacvatica</a
+            >
+
+            <a href="colt_lectura.html" class="nav-item nav-link"
+              >Colt de lectura</a
+            >
+
+            <!-- <a href="menu_ro.html" class="nav-item nav-link">Meniu</a> -->
+            <a href="contact_ro.html" class="nav-item nav-link active"
+              >Contact</a
+            >
+          </div>
+
+          <div class="language-switcher">
+            <a href="#" onclick="switchLanguage('en')">English</a> |
+            <a href="#" onclick="switchLanguage('ro')">Română</a>
           </div>
         </div>
       </nav>
@@ -102,30 +111,30 @@
       <div class="container">
         <div class="section-title">
           <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            Contacteaza ne
+            Contactează-ne
           </h4>
           <h1 class="display-4">Prin :</h1>
         </div>
         <div class="row px-3 pb-2">
           <div class="col-sm-4 text-center mb-3">
             <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
-            <h4 class="font-weight-bold">Adresa</h4>
-            <p>Bacau</p>
+            <h4 class="font-weight-bold">Adresă</h4>
+            <p>Bacau, Strada 9 Mai, Nr. 104</p>
           </div>
           <div class="col-sm-4 text-center mb-3">
             <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
             <h4 class="font-weight-bold">Telefon</h4>
-            <p>+012 345 6789</p>
+            <p>+0234 510 435</p>
           </div>
           <div class="col-sm-4 text-center mb-3">
             <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
             <h4 class="font-weight-bold">Email</h4>
-            <p>info@cineva.com</p>
+            <p>femocadocaffe@yahoo.com</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 pb-5">
-            <iframe
+            <!-- <iframe
               style="width: 100%; height: 443px"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
               frameborder="0"
@@ -133,8 +142,22 @@
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
-            ></iframe>
+            ></iframe> -->
+            <div style="width: 100%">
+              <iframe
+                style="width: 100%; height: 443px"
+                width="100%"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=bacau,%209%20mai,%20104+(Mocado%20Caffe)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/">gps devices</a></iframe
+              >
+            </div>
           </div>
+
           <div class="col-md-6 pb-5">
             <div class="contact-form">
               <div id="success"></div>
@@ -144,7 +167,7 @@
                     type="text"
                     class="form-control bg-transparent p-4"
                     id="name"
-                    placeholder="Numele tau"
+                    placeholder="Numele tău"
                     required="required"
                     data-validation-required-message="Numele tau"
                   />
@@ -155,7 +178,7 @@
                     type="email"
                     class="form-control bg-transparent p-4"
                     id="email"
-                    placeholder="Email ul tau"
+                    placeholder="Email-ul tău"
                     required="required"
                     data-validation-required-message="Please enter your email"
                   />
@@ -210,42 +233,26 @@
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Contacti
+            Contactează-ne
           </h4>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>Bacau</p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-          <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@cineva.com</p>
+          <p><i class="fa fa-map-marker-alt mr-2"></i>Bacău, str. 9 Mai</p>
+          <p><i class="fa fa-phone-alt mr-2"></i>+0234 510 435</p>
+          <p class="m-0">
+            <i class="fa fa-envelope mr-2"></i>femocadocaffe@yahoo.com
+          </p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
           <h4
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Urmariti ne
+            Urmărește-ne
           </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+          <p>Fii la curent cu noutățile și ofertele noastre!</p>
           <div class="d-flex justify-content-start">
             <a
               class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://youtube.com/freewebsitecode/"
+              href="https://canalyt.com"
               ><i class="fab fa-youtube"></i
             ></a>
           </div>
@@ -255,12 +262,12 @@
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Deschis in orele
+            Deschis între orele
           </h4>
           <div>
             <h6 class="text-white text-uppercase">Luni - Vineri</h6>
             <p>8.00 AM - 8.00 PM</p>
-            <h6 class="text-white text-uppercase">Sambata - Duminica</h6>
+            <h6 class="text-white text-uppercase">Sâmbătă - Duminică</h6>
             <p>2.00 PM - 8.00 PM</p>
           </div>
         </div>
@@ -269,20 +276,22 @@
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Noutati
+            Noutăți
           </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+          <p>
+            Abonează-te pentru a primi cele mai proaspete informații și oferte.
+          </p>
           <div class="w-100">
             <div class="input-group">
               <input
                 type="text"
                 class="form-control border-light"
                 style="padding: 25px"
-                placeholder="email ul tau"
+                placeholder="emailul tău"
               />
               <div class="input-group-append">
                 <button class="btn btn-primary font-weight-bold px-3">
-                  Inregistreaza te
+                  Înregistrează-te
                 </button>
               </div>
             </div>
