@@ -953,6 +953,31 @@
       ><i class="fa fa-angle-double-up"></i
     ></a>
     <script>
+      function switchLanguage(lang) {
+        // Define a mapping of language codes to their respective URLs
+        const langUrls = {
+          en: "service.html", // English version
+          ro: "service_ro.html", // Romanian version
+        };
+
+        // Get the current URL
+        let currentUrl = window.location.href;
+
+        // Check if the current URL contains a language code segment
+        const langCodeRegex = /\/(en|ro)\//;
+        const hasLangCode = langCodeRegex.test(currentUrl);
+
+        // If the selected language is different from the current language
+        if (langUrls.hasOwnProperty(lang)) {
+          // Generate the new URL with the appropriate language code
+          let newUrl = hasLangCode
+            ? currentUrl.replace(langCodeRegex, `/${lang}/`)
+            : langUrls[lang];
+
+          // Redirect to the new URL
+          window.location.href = newUrl;
+        }
+      }
       // Function to show selected page
       function showPage(page) {
           document.querySelectorAll('.menu-item').forEach(item => {

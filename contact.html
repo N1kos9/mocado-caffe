@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Mocado Caffe</title>
+    <title>Mocado Caffee</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
-
+    <link rel="stylesheet" href="global.css" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -27,13 +27,13 @@
       href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="engine.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
   <body>
+    <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
       <nav
         class="navbar navbar-responsive navbar-expand-lg bg-none navbar-dark py-3"
@@ -57,22 +57,20 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav ml-auto p-4">
-            <a href="index.html" class="nav-item nav-link">Pagina Principală</a>
-            <a href="about_ro.html" class="nav-item nav-link">Despre noi</a>
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
 
-            <a href="service_ro.html" class="nav-item nav-link">Catalog</a>
-            <a href="cafea_moleculara.html" class="nav-item nav-link"
-              >Cafeaneaua Subacvatică</a
+            <a href="service.html" class="nav-item nav-link">Catalogue</a>
+            <a href="molecular_coffee.html" class="nav-item nav-link"
+              >Underwater Coffee</a
             >
 
-            <a href="colt_lectura.html" class="nav-item nav-link"
-              >Colțul de Lectură</a
+            <a href="reading_corner.html" class="nav-item nav-link"
+              >Reading Corner</a
             >
 
-            <!-- <a href="menu_ro.html" class="nav-item nav-link">Meniu</a> -->
-            <a href="contact_ro.html" class="nav-item nav-link active"
-              >Contact</a
-            >
+            <!-- <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+            <a href="contact.html" class="nav-item nav-link active">Contact</a>
           </div>
 
           <div class="language-switcher">
@@ -109,39 +107,43 @@
       <div class="container">
         <div class="section-title">
           <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-            Contacteaza ne
+            Contact Us
           </h4>
-          <h1 class="display-4">Prin :</h1>
         </div>
         <div class="row px-3 pb-2">
           <div class="col-sm-4 text-center mb-3">
             <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
-            <h4 class="font-weight-bold">Adresa</h4>
-            <p>Bacau</p>
+            <h4 class="font-weight-bold">Address</h4>
+            <p>Bacau, 9 Mai Street, No. 104</p>
           </div>
           <div class="col-sm-4 text-center mb-3">
             <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
-            <h4 class="font-weight-bold">Telefon</h4>
-            <p>+012 345 6789</p>
+            <h4 class="font-weight-bold">Phone</h4>
+            <p>+0234 510 435</p>
           </div>
           <div class="col-sm-4 text-center mb-3">
             <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
             <h4 class="font-weight-bold">Email</h4>
-            <p>info@cineva.com</p>
+            <p>femocadocaffe@yahoo.com</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 pb-5">
-            <iframe
-              style="width: 100%; height: 443px"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
+            <div style="width: 100%">
+              <iframe
+                style="width: 100%; height: 443px"
+                width="100%"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=bacau,%209%20mai,%20104+(Mocado%20Caffe)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/">gps devices</a></iframe
+              >
+            </div>
           </div>
+
           <div class="col-md-6 pb-5">
             <div class="contact-form">
               <div id="success"></div>
@@ -151,9 +153,9 @@
                     type="text"
                     class="form-control bg-transparent p-4"
                     id="name"
-                    placeholder="Numele tau"
+                    placeholder="Your Name"
                     required="required"
-                    data-validation-required-message="Numele tau"
+                    data-validation-required-message="Your Name"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -162,7 +164,7 @@
                     type="email"
                     class="form-control bg-transparent p-4"
                     id="email"
-                    placeholder="Email ul tau"
+                    placeholder="Your Email"
                     required="required"
                     data-validation-required-message="Please enter your email"
                   />
@@ -173,7 +175,7 @@
                     type="text"
                     class="form-control bg-transparent p-4"
                     id="subject"
-                    placeholder="Subiect"
+                    placeholder="Subject"
                     required="required"
                     data-validation-required-message="Please enter a subject"
                   />
@@ -184,7 +186,7 @@
                     class="form-control bg-transparent py-3 px-4"
                     rows="5"
                     id="message"
-                    placeholder="Mesaj"
+                    placeholder="Message"
                     required="required"
                     data-validation-required-message="Please enter your message"
                   ></textarea>
@@ -196,7 +198,7 @@
                     type="submit"
                     id="sendMessageButton"
                   >
-                    Trimite
+                    Send
                   </button>
                 </div>
               </form>
@@ -217,44 +219,29 @@
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Contacti
+            Contact Us
           </h4>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>Bacau</p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-          <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@cineva.com</p>
+          <p><i class="fa fa-map-marker-alt mr-2"></i>Bacau, 9 Mai Street</p>
+          <p><i class="fa fa-phone-alt mr-2"></i>+0234 510 435</p>
+          <p class="m-0">
+            <i class="fa fa-envelope mr-2"></i>femocadocaffe@yahoo.com
+          </p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
           <h4
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Urmariti ne
+            Follow Us
           </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+          <p>Stay updated with our news and offers!</p>
           <div class="d-flex justify-content-start">
             <a
               class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://youtube.com/freewebsitecode/"
-              ><i class="fab fa-youtube"></i
-            ></a>
+              href="https://canalyt.com"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
@@ -262,13 +249,13 @@
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Deschis in orele
+            Opening Hours
           </h4>
           <div>
-            <h6 class="text-white text-uppercase">Luni - Vineri</h6>
-            <p>8.00 AM - 8.00 PM</p>
-            <h6 class="text-white text-uppercase">Sambata - Duminica</h6>
-            <p>2.00 PM - 8.00 PM</p>
+            <h6 class="text-white text-uppercase">Monday - Friday</h6>
+            <p>8:00 AM - 8:00 PM</p>
+            <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
+            <p>2:00 PM - 8:00 PM</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
@@ -276,20 +263,20 @@
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
           >
-            Noutati
+            News
           </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+          <p>Subscribe to receive the latest information and offers.</p>
           <div class="w-100">
             <div class="input-group">
               <input
                 type="text"
                 class="form-control border-light"
                 style="padding: 25px"
-                placeholder="email ul tau"
+                placeholder="Your email"
               />
               <div class="input-group-append">
                 <button class="btn btn-primary font-weight-bold px-3">
-                  Inregistreaza te
+                  Register
                 </button>
               </div>
             </div>
@@ -303,6 +290,33 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
+    <script>
+      function switchLanguage(lang) {
+        // Define a mapping of language codes to their respective URLs
+        const langUrls = {
+          en: "contact.html", // English version
+          ro: "contact_ro.html", // Romanian version
+        };
+
+        // Get the current URL
+        let currentUrl = window.location.href;
+
+        // Check if the current URL contains a language code segment
+        const langCodeRegex = /\/(en|ro)\//;
+        const hasLangCode = langCodeRegex.test(currentUrl);
+
+        // If the selected language is different from the current language
+        if (langUrls.hasOwnProperty(lang)) {
+          // Generate the new URL with the appropriate language code
+          let newUrl = hasLangCode
+            ? currentUrl.replace(langCodeRegex, `/${lang}/`)
+            : langUrls[lang];
+
+          // Redirect to the new URL
+          window.location.href = newUrl;
+        }
+      }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

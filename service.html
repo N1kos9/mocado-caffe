@@ -7,8 +7,6 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
-    <link rel="stylesheet" href="engine.css">
-    <link rel="stylesheet" href="global.css" />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,12 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simplePagination.js/1.6/jquery.simplePagination.js"></script>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="engine.css" />
+    <link rel="stylesheet" href="global.css" />
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -35,41 +36,57 @@
   </head>
 
   <body>
-     <!-- Navbar Start -->
-     <div class="container-fluid p-0 nav-bar">
-      <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-        <a href="index.html" class="navbar-brand px-lg-4 m-0">
-          <div class="img-logo">
-            <img src="img/mocado-6.png" alt="" />
-          </div>
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
-          <div class="navbar-nav ml-auto p-4">
-            <a href="index.html" class="nav-item nav-link ">Home</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
-            <a href="menu.html" class="nav-item nav-link active">Catalog</a>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <div class="language-switcher">
-            <a href="#" onclick="switchLanguage('en')">English</a> |
-            <a href="#" onclick="switchLanguage('ro')">Română</a>
-          </div>
-        </div>
-      </nav>
+<!-- Navbar Start -->
+<div class="container-fluid p-0 nav-bar">
+  <nav class="navbar navbar-responsive navbar-expand-lg bg-none navbar-dark py-3">
+    <a href="index.html" class="navbar-brand px-lg-4 m-0">
+      <!-- <h1 class="m-0 display-5 text-uppercase text-white">Mocado Caffe</h1> -->
+      <div class="img-logo">
+        <img src="img/mocado-7.png" alt="" />
+      </div>
+    </a>
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-between"
+      id="navbarCollapse"
+    >
+      <div class="navbar-nav ml-auto p-4">
+        <a href="index_en.html" class="nav-item nav-link "
+          >Home</a>
+        
+        <a href="about.html" class="nav-item nav-link"
+          >About Us</a>
+        
+        <a href="service.html" class="nav-item nav-link active">Catalogue</a>
+        <a href="molecular_coffee.html" class="nav-item nav-link">Underwater Coffee</a>
+
+        <a href="reading_corner.html" class="nav-item nav-link">Reading Corner</a>
+
+        <!-- <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+        <a href="contact.html" class="nav-item nav-link">Contact</a>
+      </div>
+
+
+      <div class="language-switcher">
+        <a href="#" onclick="switchLanguage('en')">English</a> |
+        <a href="#" onclick="switchLanguage('ro')">Română</a>
+      </div>
+      
     </div>
-    <!-- Navbar End -->
+  </nav>
+</div>
+<!-- Navbar End -->
+
+
+
+
 
     <!-- Page Header Start -->
     <div
@@ -80,265 +97,688 @@
         style="min-height: 400px"
       >
         <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">
-          Catalog
+          Catalogue
         </h1>
         <!-- <div class="d-inline-flex mb-lg-5">
-          <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
-          <p class="m-0 text-white px-2">/</p>
-          <p class="m-0 text-white">Services</p>
-        </div> -->
+                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Menu</p>
+            </div> -->
       </div>
     </div>
     <!-- Page Header End -->
 
-        <!-- Meniu Start -->
+
+
+<!-- Menu Start -->
 <div class="container-fluid pt-5">
   <div class="container">
     <div class="section-title">
-      <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
-        Meniu
-      </h4>
+      <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">Meniu</h4>
       <h1 class="display-4">Catalog</h1>
     </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-1.jpg"
-              alt=""
-            />
+    <div class="menu-item page1">
+      <h1>Coffee</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/espreso.png" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Espresso</h4>
+              <p class="m-0">Price: 12 lei</p>
+              <p>90 ml</p>
+            </div>
           </div>
-          <div class="col-8 col-sm-9">
-            <h4>Coffee</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/spider.png" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Spider</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>100 ml</p>
+            </div>
           </div>
-        </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-8 col-sm-9">
-            <h4>Cappuccino</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-3.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-8 col-sm-9">
-            <h4>Hot Chocolate</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/mahciato.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Machiato</h4>
+              <p class="m-0">Price: 16 lei</p>
+              <p>90 ml</p>
+            </div>
           </div>
         </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-2.jpg"
-              alt=""
-            />
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/irish.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Irish</h4>
+              <p class="m-0">Price: 25 lei</p>
+              <p>300 ml</p>
+            </div>
           </div>
-          <div class="col-8 col-sm-9">
-            <h4>Non-Alcoholic Cocktails</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/arabica.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Arabica</h4>
+              <p class="m-0">Price: 15 lei</p>
+              <p>100 ml</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-1.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-8 col-sm-9">
-            <h4>Cappuccino</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-8 col-sm-9">
-            <h4>Fresh Juices</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
-          </div>
-        </div>
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-3.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-8 col-sm-9">
-            <h4>Desserts</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
-          </div>
-        </div>
-      
-        <div class="row align-items-center mb-5">
-          <div class="col-4 col-sm-3">
-            <img
-              class="w-100 rounded-circle mb-3 mb-sm-0"
-              src="img/menu-2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="col-8 col-sm-9">
-            <h4>Soft Drinks</h4>
-            <p class="m-0">
-              Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et
-              et lorem dolor
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-title">
-      <div>
-        <h1>Click here to see the entire menu</h1>
-        <a href="/menu.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2"
-          >Menu</a
-        >
-      </div>
-    </div>
-   
-  </div>
-</div>
-<!-- Meniu End -->
-
-    <!-- Footer Start -->
-    <div
-      class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top"
-    >
-      <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Contacti
-          </h4>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>Bacau</p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-          <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@cineva.com</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Urmariti ne
-          </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-          <div class="d-flex justify-content-start">
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square"
-              href="https://freewebsitecode.com"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
-              href="https://youtube.com/freewebsitecode/"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Deschis in orele
-          </h4>
-          <div>
-            <h6 class="text-white text-uppercase">Luni - Vineri</h6>
-            <p>8.00 AM - 8.00 PM</p>
-            <h6 class="text-white text-uppercase">Sambata - Duminica</h6>
-            <p>2.00 PM - 8.00 PM</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Noutati
-          </h4>
-          <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-          <div class="w-100">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control border-light"
-                style="padding: 25px"
-                placeholder="email ul tau"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-primary font-weight-bold px-3">
-                  Inregistreaza te
-                </button>
-              </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-5.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Molecular</h4>
+              <p class="m-0">Price: 30 lei</p>
+              <p>60 ml</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+    
+    <div class="menu-item page2">
+      <h1>Cappuccino</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/cappuccino.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cappuccino</h4>
+              <p class="m-0">Price: 14 lei</p>
+              <p>90 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/vienez.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Viennese</h4>
+              <p class="m-0">Price: 16 lei</p>
+              <p>90 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/fredo.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Fredo</h4>
+              <p class="m-0">Price: 25 lei</p>
+              <p>200 ml</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/frappe.png" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Frappe</h4>
+              <p class="m-0">Price: 25 lei</p>
+              <p>120 ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="menu-item page3">
+      <h1>Hot Chocolate</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/cinnamon.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cinnamon Hot Queen</h4>
+              <p class="m-0">Price: 25 lei</p>
+              <p>250 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/mess.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Hot Mess</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>250 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/ciocolata-caramel.png" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Hot Chocolate with Salted Caramel</h4>
+              <p class="m-0">Price: 15 lei</p>
+              <p>200 ml</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/cookie.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cookie Hot Chocolate</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>150 ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="menu-item page4">
+      <h1>Teas</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/turkey.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Turkish Tea</h4>
+              <p class="m-0">Price: 9 lei</p>
+              <p>140 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/lime.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Lemon and Mint Tea</h4>
+              <p class="m-0">Price: 8 lei</p>
+              <p>150 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/verde.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Green Tea</h4>
+              <p class="m-0">Price: 10 lei</p>
+              <p>150 ml</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/musetel.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Chamomile Tea</h4>
+              <p class="m-0">Price: 6 lei</p>
+              <p>150 ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="menu-item page5">
+      <h1>Fresh Juices</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/grapefruit.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Grapefruit and Lime Fresh</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>200 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/lamaie.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Lemon and Mint Fresh</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>200 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/portocale.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Orange Fresh</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>200 ml</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/ananas.jpg" alt="" />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Pineapple Fresh</h4>
+              <p class="m-0">Price: 20 lei</p>
+              <p>200 ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div class="menu-item page6">
+      <h1>Desserts</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/lavacake.png"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Lava Cake</h4>
+              <p class="m-0">
+                Price: 15 lei
+    
+              </p>
+              <p>150 g</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/redvelvet.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Red Velvet</h4>
+              <p class="m-0">
+                Price: 20 lei
+    
+              </p>
+              <p>150 g</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/tiramius.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Tiramisu</h4>
+              <p class="m-0">
+                Price: 20 lei
+    
+              </p>
+              <p>150 g</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/briose.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Muffins</h4>
+              <p class="m-0">
+                Price: 12 lei
+    
+              </p>
+              <p>150 g</p>
+            </div>
+          </div>
+          
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/inghetata.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Ice Cream
+                (chocolate, strawberry, oreo,
+                vanilla)</h4>
+              <p class="m-0">
+                Price: 18 lei
+    
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/cheesecake.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Cheesecake with
+                Caramel</h4>
+              <p class="m-0">
+                Price: 18 lei
+    
+              </p>
+              <p>150 g</p>
+            </div>
+          </div>
+        </div>
+    
+        
+      </div>
+    </div>
+    
+
+    <div class="menu-item page7">
+      <h1>Non-Alcoholic Cocktails</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/rainbow.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Rainbow</h4>
+              <p class="m-0">
+                Price: 30 lei
+    
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/greenapple.png"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Green Apple</h4>
+              <p class="m-0">
+                Price: 25 lei
+    
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/blue.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Blue Curacao</h4>
+              <p class="m-0">
+                Price: 20 lei
+    
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/tropical.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Tropical Breeze</h4>
+              <p class="m-0">
+                Price: 25 lei
+    
+              </p>
+            </div>
+          </div>
+          
+      
+        </div>
+    
+        
+      </div>
+    </div>
+    
+
+    <div class="menu-item page8">
+      <h1>Soft Drinks</h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row align-items-center mb-5 mt-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/fanta.png"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Fanta</h4>
+              <p class="m-0">
+                Price: 10 lei
+    
+              </p>
+              <p>250 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/coca cola.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Coca Cola</h4>
+              <p class="m-0">
+                Price: 10 lei
+    
+              </p>
+              <p>250 ml</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/sprite.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Sprite</h4>
+              <p class="m-0">
+                Price: 10 lei
+    
+              </p>
+              <p>250 ml</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  mt-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/fuzetea.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Fuzetea</h4>
+              <p class="m-0">
+                Price: 9 lei
+    
+              </p>
+              <p>500 ml</p>
+            </div>
+          </div>
+          
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/schweppes.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Schweppes</h4>
+              <p class="m-0">
+                Price: 12 lei
+    
+              </p>
+              <p>500 ml</p>
+            </div>
+          </div>
+    
+          <div class="row align-items-center mb-5">
+            <div class="col-4 col-sm-3">
+              <img
+                class="w-100 rounded-circle mb-3 mb-sm-0"
+                src="img/water.png"
+                alt=""
+              />
+            </div>
+            <div class="col-8 col-sm-9">
+              <h4>Still/Sparkling Water</h4>
+              <p class="m-0">
+                Price: 8 lei
+    
+              </p>
+              <p>500 ml</p>
+            </div>
+          </div>
+        </div>
+    
+        
+      </div>
+    </div>
+    
+
+      </div>
+    </div>
+      </div>
+      <!-- Add more menu items here if needed -->
+  </div>
+  
+  <!-- Pagination -->
+  <nav class="container">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled" id="previous">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item active" id="page1"><a class="page-link" href="#">1</a></li>
+        <li class="page-item" id="page2"><a class="page-link" href="#">2</a></li>
+        <li class="page-item" id="page3"><a class="page-link" href="#">3</a></li>
+        <li class="page-item" id="page4"><a class="page-link" href="#">4</a></li>
+        <li class="page-item" id="page5"><a class="page-link" href="#">5</a></li>
+        <li class="page-item" id="page6"><a class="page-link" href="#">6</a></li>
+        <li class="page-item" id="page7"><a class="page-link" href="#">7</a></li>
+        <li class="page-item" id="page8"><a class="page-link" href="#">8</a></li>
+        <!-- Add more page numbers if needed -->
+        <li class="page-item" id="next">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+    
+</div>
+<!-- Menu End -->
+
+
+
+   <!-- Footer Start -->
+<div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+  <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Contactează-ne</h4>
+      <p><i class="fa fa-map-marker-alt mr-2"></i>Bacău, str. 9 Mai</p>
+      <p><i class="fa fa-phone-alt mr-2"></i>+0234 510 435</p>
+      <p class="m-0"><i class="fa fa-envelope mr-2"></i>femocadocaffe@yahoo.com</p>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Urmărește-ne</h4>
+      <p>Fii la curent cu noutățile și ofertele noastre!</p>
+      <div class="d-flex justify-content-start">
+        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://canalyt.com"><i class="fab fa-youtube"></i></a>
+
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Deschis între orele</h4>
+      <div>
+        <h6 class="text-white text-uppercase">Luni - Vineri</h6>
+        <p>8.00 AM - 8.00 PM</p>
+        <h6 class="text-white text-uppercase">Sâmbătă - Duminică</h6>
+        <p>2.00 PM - 8.00 PM</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-5">
+      <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px">Noutăți</h4>
+      <p>Abonează-te pentru a primi cele mai proaspete informații și oferte.</p>
+      <div class="w-100">
+        <div class="input-group">
+          <input type="text" class="form-control border-light" style="padding: 25px" placeholder="emailul tău" />
+          <div class="input-group-append">
+            <button class="btn btn-primary font-weight-bold px-3">Înregistrează-te</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
@@ -370,7 +810,72 @@
           window.location.href = newUrl;
         }
       }
-    </script>
+      // Function to show selected page
+      function showPage(page) {
+          document.querySelectorAll('.menu-item').forEach(item => {
+              item.style.display = 'none';
+          });
+  
+          document.querySelectorAll('.pagination li').forEach(li => {
+              li.classList.remove('active');
+          });
+  
+          document.getElementById(page).classList.add('active');
+  
+          var itemsToShow = document.getElementsByClassName(page);
+          for (var i = 0; i < itemsToShow.length; i++) {
+              itemsToShow[i].style.display = 'block';
+          }
+  
+          updatePaginationButtons(page);
+      }
+  
+      // Function to update pagination buttons state
+      function updatePaginationButtons(activePage) {
+          var previousButton = document.getElementById('previous');
+          var nextButton = document.getElementById('next');
+  
+          previousButton.classList.remove('disabled');
+          nextButton.classList.remove('disabled');
+  
+          if (activePage === 'page1') {
+              previousButton.classList.add('disabled');
+          } else if (activePage === 'page2') {
+              nextButton.classList.add('disabled');
+          }
+      }
+  
+      // Initially show the content of the first page
+      showPage('page1');
+  
+      // Event listeners for pagination
+      document.getElementById('previous').addEventListener('click', function(event) {
+          event.preventDefault();
+          var activePage = document.querySelector('.pagination li.active').id;
+          var previousPage = 'page' + (parseInt(activePage.substr(4)) - 1);
+          if (!this.classList.contains('disabled')) {
+              showPage(previousPage);
+          }
+      });
+  
+      document.getElementById('next').addEventListener('click', function(event) {
+          event.preventDefault();
+          var activePage = document.querySelector('.pagination li.active').id;
+          var nextPage = 'page' + (parseInt(activePage.substr(4)) + 1);
+          if (!this.classList.contains('disabled')) {
+              showPage(nextPage);
+          }
+      });
+  
+      document.querySelectorAll('.pagination li').forEach(item => {
+          item.addEventListener('click', function(event) {
+              event.preventDefault();
+              var pageId = this.id;
+              showPage(pageId);
+          });
+      });
+  </script>
+  
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
