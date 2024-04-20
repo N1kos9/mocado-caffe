@@ -715,9 +715,7 @@
   <!-- Pagination -->
   <nav class="container">
     <ul class="pagination justify-content-center">
-        <li class="page-item disabled" id="previous">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-        </li>
+        
         <li class="page-item active" id="page1"><a class="page-link" href="#">1</a></li>
         <li class="page-item" id="page2"><a class="page-link" href="#">2</a></li>
         <li class="page-item" id="page3"><a class="page-link" href="#">3</a></li>
@@ -727,9 +725,7 @@
         <li class="page-item" id="page7"><a class="page-link" href="#">7</a></li>
         <li class="page-item" id="page8"><a class="page-link" href="#">8</a></li>
         <!-- Add more page numbers if needed -->
-        <li class="page-item" id="next">
-            <a class="page-link" href="#">Next</a>
-        </li>
+      
     </ul>
 </nav>
     
@@ -810,70 +806,71 @@
           window.location.href = newUrl;
         }
       }
-      // Function to show selected page
-      function showPage(page) {
-          document.querySelectorAll('.menu-item').forEach(item => {
-              item.style.display = 'none';
-          });
-  
-          document.querySelectorAll('.pagination li').forEach(li => {
-              li.classList.remove('active');
-          });
-  
-          document.getElementById(page).classList.add('active');
-  
-          var itemsToShow = document.getElementsByClassName(page);
-          for (var i = 0; i < itemsToShow.length; i++) {
-              itemsToShow[i].style.display = 'block';
-          }
-  
-          updatePaginationButtons(page);
-      }
-  
-      // Function to update pagination buttons state
-      function updatePaginationButtons(activePage) {
-          var previousButton = document.getElementById('previous');
-          var nextButton = document.getElementById('next');
-  
-          previousButton.classList.remove('disabled');
-          nextButton.classList.remove('disabled');
-  
-          if (activePage === 'page1') {
-              previousButton.classList.add('disabled');
-          } else if (activePage === 'page2') {
-              nextButton.classList.add('disabled');
-          }
-      }
-  
-      // Initially show the content of the first page
-      showPage('page1');
-  
-      // Event listeners for pagination
-      document.getElementById('previous').addEventListener('click', function(event) {
-          event.preventDefault();
-          var activePage = document.querySelector('.pagination li.active').id;
-          var previousPage = 'page' + (parseInt(activePage.substr(4)) - 1);
-          if (!this.classList.contains('disabled')) {
-              showPage(previousPage);
-          }
-      });
-  
-      document.getElementById('next').addEventListener('click', function(event) {
-          event.preventDefault();
-          var activePage = document.querySelector('.pagination li.active').id;
-          var nextPage = 'page' + (parseInt(activePage.substr(4)) + 1);
-          if (!this.classList.contains('disabled')) {
-              showPage(nextPage);
-          }
-      });
-  
-      document.querySelectorAll('.pagination li').forEach(item => {
-          item.addEventListener('click', function(event) {
-              event.preventDefault();
-              var pageId = this.id;
-              showPage(pageId);
-          });
-      });
+   // Function to show selected page
+function showPage(page) {
+    document.querySelectorAll('.menu-item').forEach(item => {
+        item.style.display = 'none';
+    });
+
+    document.querySelectorAll('.pagination li').forEach(li => {
+        li.classList.remove('active');
+    });
+
+    document.getElementById(page).classList.add('active');
+
+    var itemsToShow = document.getElementsByClassName(page);
+    for (var i = 0; i < itemsToShow.length; i++) {
+        itemsToShow[i].style.display = 'block';
+    }
+
+    updatePaginationButtons(page);
+}
+
+// Function to update pagination buttons state
+function updatePaginationButtons(activePage) {
+    var previousButton = document.getElementById('previous');
+    var nextButton = document.getElementById('next');
+
+    previousButton.classList.remove('disabled');
+    nextButton.classList.remove('disabled');
+
+    if (activePage === 'page1') {
+        previousButton.classList.add('disabled');
+    } else if (activePage === 'page8') {
+        nextButton.classList.add('disabled');
+    }
+}
+
+// Initially show the content of the first page
+showPage('page1');
+
+// Event listeners for pagination
+document.getElementById('previous').addEventListener('click', function(event) {
+    event.preventDefault();
+    var activePage = document.querySelector('.pagination li.active').id;
+    var previousPage = 'page' + (parseInt(activePage.substr(4)) - 1);
+    if (!this.classList.contains('disabled')) {
+        showPage(previousPage);
+    }
+});
+
+document.getElementById('next').addEventListener('click', function(event) {
+    event.preventDefault();
+    var activePage = document.querySelector('.pagination li.active').id;
+    var nextPage = 'page' + (parseInt(activePage.substr(4)) + 1);
+    if (!this.classList.contains('disabled')) {
+        showPage(nextPage);
+    }
+});
+
+document.querySelectorAll('.pagination li').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault();
+        var pageId = this.id;
+        showPage(pageId);
+    });
+});
+
   </script>
   
     <!-- JavaScript Libraries -->
